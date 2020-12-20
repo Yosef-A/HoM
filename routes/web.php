@@ -29,8 +29,13 @@ Route::prefix('auth')->group(function () {
     Route::post('login', 'App\Http\Controllers\AppController@login');
     Route::post('register', 'App\Http\Controllers\AppController@register');
     Route::post('logout', 'App\Http\Controllers\AppController@logout');
+   
     
 });
+Route::get('get_BK', 'App\Http\Controllers\BeekeeperController@getBK');
+Route::get('get_HiveBk', 'App\Http\Controllers\InvesterController@get_Hives');
+
+
 
 /*Auth::routes();
 Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin')->middleware('admin');
