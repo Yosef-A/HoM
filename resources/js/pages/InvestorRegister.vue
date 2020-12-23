@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>ABC</h1>
+        <h1>Investor</h1>
     </div>
 </template>
 

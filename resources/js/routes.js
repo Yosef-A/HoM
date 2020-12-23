@@ -1,5 +1,6 @@
 import Home from './pages/Home';  
 import Register from './pages/Register';  
+import Hive from './Beekeeper/Hive'; 
 import Abc from './pages/Abc';  
 import Bcd from './pages/Bcd';
 import Login from './pages/Login';    
@@ -36,5 +37,10 @@ export default [
         path: '/login',
         component: Login,
         name: 'login'
+    },
+    {
+        path:'/hive',
+        component: Hive,
+        name:'hive'
     }
 ]

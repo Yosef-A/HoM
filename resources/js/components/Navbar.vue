@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="#">HOM</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -54,6 +54,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+nav{
+    background-color: rgb(0,0,0,0.338);
+   /* height:40px;*/
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+nav router-link{
+   position:absolute;
+    top:50%;
+    right:0;
+    transform: translate(-50%,-50%);
+}
 
 </style>

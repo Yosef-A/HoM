@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="card">
-            <div class="card-header">
+        <div class="box">
+            <div class="login">
                 Login
             </div>
-            <div class="card-body">
+            <div class="body">
                 <div class="col-md-6 offset-md-3">
                     <form v-on:submit.prevent="onSubmit">
                         <div class="alert alert-danger" v-if="errors.length">
@@ -26,7 +26,7 @@
                             <input type="password" class="form-control" v-model="password">
                         </div>
                        
-                        <button class="btn btn-success">Login</button>
+                        <button class="btn">Login</button>
                     </form>    
                 </div>
             </div>
@@ -75,10 +75,10 @@ export default {
                         this.$router.push("/");
                     }
                     if (this.app.user.User_Type==2) {
-                        this.$router.push("/abc");
+                        this.$router.push("/hive");
                     }
                     if (this.app.user.User_Type==3) {
-                        this.$router.push("/bcd");
+                        this.$router.push("/hive");
                     }
                     
                 }).catch(error => {
@@ -90,6 +90,43 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+    :root{
+    --primary-color:#e50914;
+    --dark-color:#141414;
+}
+.box{
+    background-color:rgba(0, 0, 0, 0.728);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+label{
+      color: rgb(198,198,198);
+}
+.login{
+     text-align: center;
+    font-size: 50px;
+    color: rgb(198,198,198);
+}
+.container{
+    width: 530px;
+    padding-top: 90px;
+}
 
+.btn{
+    display: inline-block;
+    background-color:rgb(185, 102, 47);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size:1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline:none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 5px;
+    margin-left: 70px;
+   
+}
 </style>

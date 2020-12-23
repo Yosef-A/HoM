@@ -18,8 +18,8 @@ class CreateInvestersHivesTable extends Migration
             $table->bigInteger('Hive_Id')->unsigned();
             $table->bigInteger('Investor_Id')->unsigned();
             $table->timestamps();
-            $table->foreign('Hive_Id')->references('id')->on('hives')->onDelete('cascade');
-            $table->foreign('Investor_Id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('Hive_id')->references('id')->on('hives')->onDelete('cascade');
+            $table->foreign('Investor_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

@@ -20,8 +20,7 @@
       </script>
 
       <script src="{{ asset('js/app.js') }}"></script>
-     
-  <!-- JS, Popper.js, and jQuery -->
+
  
     </body>
 </html>
